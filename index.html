@@ -6,483 +6,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAD.FI</title>
     <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body>
 
-    <div class="bg-gray-900">
       <!-- Header -->
-  <header class="absolute inset-x-0 top-0 z-50">
-    <nav class="flex items-center justify-center justify-between p-6 lg:px-24" aria-label="Global">
-      <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
-          <span class="sr-only">Your Company</span>
-          <img class="h-10 w-auto" src="src/img/PAD-LOGO.svg" alt="">
-        </a>
-      </div>
-      <div class="flex sm:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-      </div>
-
-
-      <div class="block md:flex lg:gap-x-12">
-        <div class="relative">
-
-          
-
-          <button type="button" class="inline-flex group items-center gap-x-2 rounded-full bg-indigo-600 py-4 px-6 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            Products
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>            
-          </button>
-          
-  
-            <div class=" absolute -right-4 z-10 group-focus:block mt-4 flex w-screen max-w-max  px-4">
-              <div class="w-screen gap-3 max-w-md flex-auto overflow-hidden rounded-3xl bg-gray-900/70 backdrop-blur-md text-sm leading-6 shadow-2xl ring-1 ring-gray-800">
-                <div class="p-4 flex-col gap-4">
-
-                  <div class="group relative flex items-center gap-x-6 rounded-2xl p-4 hover:bg-gray-950/40 hover:ring-1 hover:ring-gray-800">
-                    <div class="mt-1 flex h-16 w-16 flex-none items-center justify-center rounded-lg">
-                      <img class="h-16 w-auto" src="src/img/dex-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                    <div>
-                      <a href="#" class="font-semibold text-gray-100">
-                        PAD's DEX
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-400">Buy, sell, and provide liquidity for the best projects on Aurora. </p>
-                    </div>
-                  </div>
-
-                  <div class="group relative flex items-center gap-x-6 rounded-2xl p-4 hover:bg-gray-950/40 hover:ring-1 hover:ring-gray-800">
-                    <div class="mt-1 flex h-16 w-16 flex-none items-center justify-center rounded-lg">
-                      <img class="h-16 w-auto" src="src/img/launchpad-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                    <div>
-                      <a href="#" class="font-semibold text-gray-100">
-                        Launchpad
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-400">Support the latest and innovative projects.</p>
-                    </div>
-                  </div>
-          
-        
-                  <div class="group relative flex gap-x-6 rounded-2xl p-4 bg-gray-800/40">
-                    <div class="mt-1 flex h-16 w-16 flex-none items-center justify-center rounded-lg">
-                      <img class="h-16 w-auto" src="src/img/dex-agg-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                    <div>
-                      <div class="font-semibold text-gray-500">
-                        DEX Aggregator
-                        <span class="inline-flex items-center rounded-full bg-indigo-600/20 ml-2 px-2.5 py-0.5 text-xs font-medium text-indigo-300">Coming soon</span>
-
-                        <span class="absolute inset-0"></span>
-                      </div>
-                      <p class="mt-1 text-gray-600">Instantly swap with the best rates on Aurora. </p>
-                    </div>
-                  </div>
-          
-                </div>
-              </div>
+  <div class="bg-black m-auto h-screen">
+        <header class="absolute inset-x-0 top-0 z-50">
+          <nav class="flex items-center justify-between p-5 lg:px-24" aria-label="Global">
+            <div class="flex lg:flex-1">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">AZAAR</span>
+                <img class="h-5 w-auto" src="src/img/azaar-logo.svg" alt="">
+              </a>
             </div>
-        </div>
-      </div>
-      
-    </nav>
-    
-    <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="block sm:hidden" role="dialog" aria-modal="true">
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div class="fixed inset-0 z-50"></div>
-      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="src/img/PAD-LOGO.svg" alt="">
-          </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-300">
-            <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-
-          <div class="mt-10 flex-col gap-20 divide-ydivide-gray-500/10">
             
-                  <div class="group  relative flex  gap-2 rounded-2xl p-4 bg-gray-950/40 ">
-                    <div class="mt-1 flex h-16 w-16 flex-none  rounded-lg">
-                      <img class="h-12 w-auto" src="src/img/dex-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                      <div>
-                          <a href="#" class="font-semibold text-gray-100">
-                            PAD's DEX
-                        <span class="absolute inset-0"></span>
-                      </a>
-                    <p class="mt-1 text-gray-400">Buy, sell, and provide liquidity for the best projects on Aurora. </p>
-                    </div>
-                  </div>
-
-                  <div class="group mt-4 relative flex gap-2 rounded-2xl p-4 bg-gray-950/40 ">
-
-                    <div class="mt-1 flex h-16 w-16 flex-none rounded-lg">
-                      <img class="h-12 w-auto" src="src/img/launchpad-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                    <div>
-                      <a href="#" class="font-semibold text-gray-100">
-                        Launchpad
-                        <span class="absolute inset-0"></span>
-                      </a>
-                      <p class="mt-1 text-gray-400">Support the latest and innovative projects.</p>
-                    </div>
-                  </div>
-          
-        
-                  <div class="group mt-4 relative flex gap-2 rounded-2xl p-4 bg-gray-800/40">
-                    <div class="mt-1 flex h-16 w-16 flex-none  rounded-lg">
-                      <img class="h-12 w-auto" src="src/img/dex-agg-icon.svg" alt="" width="56px" height="56px" >
-                    </div>
-                    <div>
-                      <div class="font-semibold text-gray-500">
-                        DEX Aggregator
-                        <span class="inline-flex items-center rounded-full bg-indigo-600/20 ml-2 px-2.5 py-0.5 text-xs font-medium text-indigo-300">Coming soon</span>
-
-                        <span class="absolute inset-0"></span>
-                      </div>
-                      <p class="mt-1 text-gray-600">Instantly swap with the best rates on Aurora. </p>
-                    </div>
-                  </div>
-          </div>
-      </div>
-    </div>
-  </header>
-      <main>
-
-        <!-- Hero section -->
-        <div class="relative isolate overflow-hidden">
-          <svg class="absolute  inset-0  h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-            <defs>
-              <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
-              <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
-            </svg>
-            <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
-          </svg>
-          <svg viewBox="0 0 1108 632" aria-hidden="true" class="absolute  top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]">
-            <path fill="url(#175c433f-44f6-4d59-93f0-c5c51ad5566d)" fill-opacity=".2" d="M235.233 402.609 57.541 321.573.83 631.05l234.404-228.441 320.018 145.945c-65.036-115.261-134.286-322.756 109.01-230.655C968.382 433.026 1031 651.247 1092.23 459.36c48.98-153.51-34.51-321.107-82.37-385.717L810.952 324.222 648.261.088 235.233 402.609Z" />
-            <defs>
-              <linearGradient id="175c433f-44f6-4d59-93f0-c5c51ad5566d" x1="1220.59" x2="-85.053" y1="432.766" y2="638.714" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4F46E5" />
-                <stop offset="1" stop-color="#80CAFF" />
-              </linearGradient>
-            </defs>
-          </svg>
-
-
-          <div class="mx-auto max-w-7xl px-6 pt-10 pb-48 sm:pb-40 lg:flex lg:px-8 lg:pt-40">
-            <div class="mx-auto max-w-2xl z-10 flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-              <div class="mt-24 sm:mt-32 lg:mt-16">
-                <a href="#" class="inline-flex space-x-6">
-                  <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">Roadmap 2023</span>
-                  <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
-                    <span>PAD Digest #1</span>
-                    <svg class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-                    </svg>
-                  </span>
-                </a>
-              </div>
-
-              <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">The DeFi hub of the NEAR ecosystem</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-300">Pad is your all-in-one platform for discovering new projects, buying, and selling crypto with the best rates in the NEAR & Aurora ecosystem. Dive into innovative projects on the launchpad. </p>
-              <!-- <div class="mt-10 flex items-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Get started</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-white">Live demo <span aria-hidden="true">→</span></a>
-              </div> -->
+            
+            <div class=" lg:flex lg:flex-1 lg:justify-end">
+              <button type="button " class="border-transparent inline-flex group items-center gap-x-2 font-space border-b-2 rounded-xl px-6 py-4 md:px-8 md:py-4 ring-1  ring-gray-600 text-sm font-semibold text-white   transition-all ease-in-out duration-500 hover:ring-purple-400 hover:text-purple-400 hover:border-purple-400 shadow-[inset_0_-2px_10px_rgba(216,180,254,0.0)] hover:shadow-[inset_0_-2px_10px_rgba(216,180,254,0.6)] ">
+                Go to app
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                  <path class="transition-transform ease-in-out duration-400 group-hover:translate-x-1" fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                </svg>                
+              </button>
             </div>
-
-
-            <div class="hidden lg:block mx-auto mt-16 flex z-10 max-w-2xl sm:mt-24 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none ">
-              <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-                <iframe src='https://my.spline.design/padfirefinedherocopy-0c13f798c0bd5bdfb33d5f82e1a240a2/' width="1000" height="600"></iframe>
-              </div>
-            </div>
-
-            <div class="block lg:hidden absolute -z-10 sm:ml-0 md:ml-80 inset-0  [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]">
-              <iframe src='https://my.spline.design/padfirefinedherocopy-0c13f798c0bd5bdfb33d5f82e1a240a2/' frameborder='0' width="1000" height="700"></iframe>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!-- Logo cloud -->
-
-        <div class="bg-gray-900 pb-24 pt-12 sm:pt-10">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-lg font-semibold leading-8 text-white">Building the ecosystem to bootstrap innovations together.</h2>
-
-            <div class="mt-10 overflow-visible grid grid-cols-2 gap-2 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-4">
-              <div class="bg-white/5 p-8 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/NGC.svg" alt="NGC Ventures" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/OWC.svg" alt="OWC" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/GENBLOCK.svg" alt="Genblock" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/elipti.svg" alt="Elipti" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/LD-CAPITAL.svg" alt="LD Capital" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/SUPERNOVA.svg" alt="SuperNova" width="158" height="48">
-              </div>
-              <div class="bg-white/5 p-6 sm:p-10 sm:rounded-lg">
-                <img class="max-h-12 w-full object-contain" src="src/img/FLOW.svg" alt="LD Flow" width="158" height="48">
-              </div>
-              <div class="flex group overflow-visible transition ease-in-out z-10  duration-300 items-center justify-center transition-all duration-500 bg-gradient-to-tl from-violet-600 via-indigo-700 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:drop-shadow-2xl hover:shadow-indigo-600/30 sm:rounded-lg">
-                <p class="text-2xl font-bold transition-all duration-500 translate-x-3 group-hover:-translate-x-2 tracking-tight text-white sm:text-2xl">Get in touch</p>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6 mt-1 transition-all duration-500 translate-x-2 text-white/0 group-hover:text-white/100 group-hover:translate-x-3">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-
-              </div>
-            </div>
-          </div>
-        </div>
-  
-    
-
+          </nav>
+        </header>
       
 
-        <!-- Feature section -->
-        <div class="overflow-hidden bg-gray-900 py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div class="lg:pr-8 lg:pt-4">
-                <div class="lg:max-w-lg">
-                  <h2 class="text-base font-semibold leading-7 text-indigo-400">Enter PAD</h2>
-                  <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Platform for Advancement & Disruption</p>
-                  <p class="mt-6 text-lg leading-8 text-gray-300">Navigate the boundless opportunities on Aurora through a secure, fast, user-friendly DeFi Hub.</p>
-                  <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
-                    <div class="relative pl-9">
-                      <dt class="inline font-semibold text-white">
-                        <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
-                        </svg>
-                        Security.
-                      </dt>
-                      <dd class="inline">Users always control their private keys and the smart contracts they interact with, ensuring that no third-party mediates any interaction. </dd>
-                    </div>
-        
-                    <div class="relative pl-9">
-                      <dt class="inline font-semibold text-white">
-                        <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-                        </svg>
-                        Speed.
-                      </dt>
-                      <dd class="inline">A second can make all the difference in DeFi. This is why we’ve designed Pad to be fast and responsive.</dd>
-                    </div>
-        
-                    <div class="relative pl-9">
-                      <dt class="inline font-semibold text-white">
-                        <svg class="absolute top-1 left-1 h-5 w-5 text-indigo-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                          <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
-                        </svg>
-                        Access.
-                      </dt>
-                      <dd class="inline ">Unlocking the next wave of DeFi users needs platforms that cater to the needs of everyone regardless of their level of experience or expertise.</dd>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-              
-              <div class="hidden lg:block mx-auto flex mr-10 max-w-2xl sm:mt-24 lg:-ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none ">
-                <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-                  <iframe src='https://my.spline.design/interactivespherescopy-c27db4733ccf87427fad4b3cb18d2d1c/' frameborder='0' width='700px' height='640px'></iframe>
-                </div>
-              </div>
+          <iframe class="absolute bg-cover inset-x-0 -z-10 h-screen" src='https://my.spline.design/order-e64110c49e136b26bc9840e166eb3e80/'  width='100%' height='100%'></iframe>
 
-             
-
+          <div class="relative isolate overflow-hidden ">
+            <iframe class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src='https://my.spline.design/order-e64110c49e136b26bc9840e166eb3e80/' frameborder='0' width='100%' height='100%'></iframe>
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
+
+            <div class="mx-auto max-w-2xl h-screen flex flex-col justify-center items-center ">
+              <div class="text-center ">
+                <h1 class="text-6xl font-bold tracking-tight text-white sm:text-8xl">
+                  <div class="inline-block font-space relative ">One</div>
+                  <div class="inline-block font-space relative ">place</div>
+                  <div class="inline-block font-space relative z-20">to</div>
+                  <div class="inline-block font-space relative ">buy</div>
+                  <div class="inline-block font-space relative ">them</div>
+                  <div class="inline-block font-space relative z-20">all</div>
+                </h1>
+              </div>
+   
+            </div>
+
+            <div class="absolute inset-x-0 z-20 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+              <div class="relative  left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+            </div>
+
+            <footer class="absolute  right-0 z-10 bottom-0">
+              <div class="mx-auto bg-black  h-20 w-96 rounded-md  rounded-lg overflow-hidden px-4 pt-4 sm:pt-4 lg:px-8">
+                  
+              </div>
+          </footer>
             
-          </div>
-        </div>
-        
+          </div>    
+      </div>
 
-        <!-- //Product Section -->
-
-        <div class="bg-gray-900 py-24 sm:py-32">
-          <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          
-            <div class="mx-auto max-w-4xl text-center">
-              <h2 class="text-base font-semibold leading-7 text-indigo-400">PAD Products</h2>
-              <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Everything you need in one place</p>
-            </div>
-            <p class="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">Trade confidently on our secure decentralized exchange, launch your next big idea on our decentralized launchpad, and stay ahead of the game for more.</p>
-            
-            <div class="isolate mx-auto mt-32 grid max-w-md grid-cols-1 gap-24 lg:mx-0 lg:max-w-none lg:gap-8 lg:grid-cols-3">
-              <div class="rounded-3xl shadow-3xl p-8 xl:p-10 bg-white/5 ">
-                <div class="-mt-24 flex h-40 w-40 flex-none items-center justify-center rounded-lg">
-                  <img class="h-40 w-auto" src="src/img/dex-icon.svg" alt="" width="56px" height="56px" >
-                </div>
-                <div class="flex pt-4 items-center justify-between gap-x-4">
-                  <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">PAD's DEX</h3>
-                </div>
-                <p class="mt-4 text-base leading-6 text-gray-300">Buy, sell, and provide liquidity for the best projects on Aurora.</p>
-                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500">Go to app</a>
-  
-              </div>
-
-              <div class="rounded-3xl p-8 xl:p-10 bg-white/5 ">
-                <div class="-mt-24 flex h-40 w-40 flex-none items-center justify-center rounded-lg">
-                  <img class="h-40 w-auto" src="src/img/launchpad-icon.svg" alt="" width="56px" height="56px" >
-                </div>
-                <div class="flex pt-4 items-center justify-between gap-x-4">
-                  <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">Launchpad</h3>
-                </div>
-                <p class="mt-4 text-base leading-6 text-gray-300">Support the latest and innovative projects.</p>
-                
-                <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-500">Go to app</a>
-              
-              </div>
-
-              <div class="rounded-3xl  p-8 xl:p-10 ring-1 ring-white/10">
-                <div class="-mt-24 flex h-40 w-40 flex-none items-center justify-center rounded-lg">
-                  <img class="h-40 w-auto" src="src/img/dex-agg-icon.svg" alt="" width="56px" height="56px" >
-                </div>
-                <div class="flex pt-4 items-center justify-between gap-x-4">
-                  <h3 id="tier-freelancer" class="text-3xl font-semibold leading-8 text-white">DEX Aggregator</h3>
-                </div>
-                <p class="mt-4 text-base leading-6 text-gray-500">Instantly swap with the best rates on Aurora.</p>
-
-                
-                <div aria-describedby="tier-startup" class="mt-6 block rounded-full py-4 px-6 rounded-full text-center text-sm font-semibold leading-6 bg-white/10 text-gray-500 ">Comming soon</div>
-
-              
-              </div>           
-            </div>
-          </div>
-        </div>
-        
      
       
-        
-        
-        
-  
-        
+
+
+    <footer class="absolute p-5 inset-x-0 bottom-0">
+        <div class=" hidden rounded-md md:flex justify-center rounded-lg overflow-hidden  sm:pt-4 lg:px-8">
+            <nav class="-mb-px flex inline-flex items-center  bg-opacity-40 bg-gray-900 rounded-lg pr-4 pl-4 pt-4 justify-center items-center space-x-2 ">
     
+                <div class="group flex flex-col items-center">
+                    <a href="https://twitter.com/pad_finance" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Twitter</a>
+                    <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+                
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+                <div class="group flex flex-col items-center">
+                  <a href="https://t.me/nearpad" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Telegram</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+                <div class="group flex flex-col items-center">
+                  <a href="https://nearpad.medium.com/" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Medium</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+                <div class="group flex flex-col items-center">
+                  <a href="https://www.youtube.com/channel/UCKXGYVket6ePTW0JUCayfmg" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">YouTube</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+                <div class="group flex flex-col items-center">
+                  <a href="mailto:hello@nearpad.io" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Mail</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+                <div class="group flex flex-col items-center">
+                  <a href="https://discord.com/channels/951468324544471040/951468324544471046" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Discord</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
+
+                <p class="text-gray-200 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+
+                <div class="group flex flex-col items-center">
+                  <a href="https://forum.pad.fi/" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Forum</a>
+                  <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
+                </div>
     
-       
-    
-
-
-        <!-- CTA section -->
-        <div class="relative isolate mt-32 px-6 py-16 sm:mt-24 sm:py-20 lg:px-8">
-          <!-- <iframe class="absolute inset-0 -z-10 h-full w-full" src='https://my.spline.design/padfirefinedherocopycopy-8331d44cb672af79b9720be64183024b/' frameborder='0' width='100%' height='100%'></iframe> -->
-          <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-            <defs>
-              <pattern id="1d4240dd-898f-445f-932d-e2872fd12de3" width="200" height="100" x="50%" y="0" patternUnits="userSpaceOnUse">
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="0" class="overflow-visible fill-gray-800/20">
-              <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
-            </svg>
-            <rect width="100%" height="100%" stroke-width="0" fill="url(#1d4240dd-898f-445f-932d-e2872fd12de3)" />
-          </svg>
-          <div class="absolute inset-x-0 top-10 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl">
-            <svg viewBox="0 0 1108 632" aria-hidden="true" class="w-[69.25rem] flex-none">
-              <path fill="url(#175c433f-44f6-4d59-93f0-c5c51ad5566d)" fill-opacity=".2" d="M235.233 402.609 57.541 321.573.83 631.05l234.404-228.441 320.018 145.945c-65.036-115.261-134.286-322.756 109.01-230.655C968.382 433.026 1031 651.247 1092.23 459.36c48.98-153.51-34.51-321.107-82.37-385.717L810.952 324.222 648.261.088 235.233 402.609Z" />
-              <defs>
-                <linearGradient id="175c433f-44f6-4d59-93f0-c5c51ad5566d" x1="1220.59" x2="-85.053" y1="432.766" y2="638.714" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#4F46E5" />
-                  <stop offset="1" stop-color="#80CAFF" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-
-          <div class="mx-auto max-w-7xl grid grid px-6 py-24 sm:py-24 lg:px-8">
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Bootstrap your innovations.<br>Start using our products today.</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-300">PAD helps developers to deliver innovations at scale, while enabling users to experience developments that scale within their needs.</p>
-
-            <div class="mt-10 flex items-center gap-x-6">
-              <a href="#" class="rounded-full bg-indigo-600 px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-300">Learn more <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
+            </nav>
         </div>
-      </main>
-    
-      <!-- Footer -->
-      <footer aria-labelledby="footer-heading" class="relative">
-        <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="mx-auto max-w-7xl px-6 pb-8 pt-4 lg:px-8">
-          <div class="border-t border-white/10 pt-8 md:flex md:items-center md:justify-between">
-            <div class="flex space-x-6 md:order-2">
-              <a href="#" class="text-gray-500 hover:text-gray-400">
-                <span class="sr-only">Facebook</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                </svg>
-              </a>
-    
-              <a href="#" class="text-gray-500 hover:text-gray-400">
-                <span class="sr-only">Instagram</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
-                </svg>
-              </a>
-    
-              <a href="#" class="text-gray-500 hover:text-gray-400">
-                <span class="sr-only">Twitter</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-              </a>
-    
-              <a href="#" class="text-gray-500 hover:text-gray-400">
-                <span class="sr-only">GitHub</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-                </svg>
-              </a>
-    
-              <a href="#" class="text-gray-500 hover:text-gray-400">
-                <span class="sr-only">YouTube</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-            <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">&copy; 2023 PAD Finance, All rights reserved.</p>
-          </div>
+    </footer>
+      
+
+    <footer class="absolute md:hidden p-5 inset-x-0 bottom-0">
+      
+      <div class="flex space-x-6 justify-center items-center md:order-2">
+        <a href="https://twitter.com/pad_finance" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Twitter</span>
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+        </svg>
+        </a>
+        <a href="https://t.me/nearpad" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Telegram</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38245C11.3857 9.78701 9.44176 10.6243 6.52656 11.8945C6.05318 12.0827 5.8052 12.2669 5.78262 12.4469C5.74447 12.7513 6.12558 12.8711 6.64454 13.0343C6.71513 13.0565 6.78828 13.0795 6.86326 13.1039C7.37385 13.2698 8.06067 13.464 8.41772 13.4717C8.7416 13.4787 9.10309 13.3452 9.50218 13.0711C12.2259 11.2325 13.632 10.3032 13.7202 10.2832C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4039C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4113 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80082C16.6483 8.66229 16.6318 8.48499 16.6184 8.40716C16.6051 8.32932 16.5773 8.21843 16.4761 8.13634C16.3563 8.03912 16.1713 8.01862 16.0886 8.02008C15.7125 8.0267 15.1354 8.22736 12.3583 9.38245Z" fill="currentColor"></path>
+        </svg>
+        </a>
+        <a href="https://nearpad.medium.com/" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Medium</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M13.5374 11.8277C13.5374 15.5984 10.5069 18.6552 6.76884 18.6552C3.03073 18.6552 0 15.5977 0 11.8277C0 8.05767 3.0305 5 6.76884 5C10.5072 5 13.5374 8.05698 13.5374 11.8277Z" fill="currentColor"></path>
+        <path d="M20.9642 11.8277C20.9642 15.377 19.4489 18.2554 17.5797 18.2554C15.7106 18.2554 14.1953 15.377 14.1953 11.8277C14.1953 8.27834 15.7103 5.3999 17.5795 5.3999C19.4487 5.3999 20.9639 8.27742 20.9639 11.8277" fill="currentColor"></path>
+        <path d="M24.0015 11.8277C24.0015 15.007 23.4686 17.586 22.8112 17.586C22.1537 17.586 21.6211 15.0077 21.6211 11.8277C21.6211 8.6477 22.1539 6.06946 22.8112 6.06946C23.4684 6.06946 24.0015 8.64747 24.0015 11.8277Z" fill="currentColor"></path>
+        </svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCKXGYVket6ePTW0JUCayfmg" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">YouTube</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.7609 7.20005C23.7609 7.20005 23.5266 5.54536 22.8047 4.8188C21.8906 3.86255 20.8688 3.85786 20.4 3.80161C17.0438 3.55786 12.0047 3.55786 12.0047 3.55786H11.9953C11.9953 3.55786 6.95625 3.55786 3.6 3.80161C3.13125 3.85786 2.10938 3.86255 1.19531 4.8188C0.473438 5.54536 0.24375 7.20005 0.24375 7.20005C0.24375 7.20005 0 9.14536 0 11.086V12.9047C0 14.8454 0.239062 16.7907 0.239062 16.7907C0.239062 16.7907 0.473437 18.4454 1.19062 19.1719C2.10469 20.1282 3.30469 20.0954 3.83906 20.1985C5.76094 20.3813 12 20.4375 12 20.4375C12 20.4375 17.0438 20.4282 20.4 20.1891C20.8688 20.1329 21.8906 20.1282 22.8047 19.1719C23.5266 18.4454 23.7609 16.7907 23.7609 16.7907C23.7609 16.7907 24 14.85 24 12.9047V11.086C24 9.14536 23.7609 7.20005 23.7609 7.20005ZM9.52031 15.1125V8.36724L16.0031 11.7516L9.52031 15.1125Z" fill="currentColor"></path>
+        </svg>
+        </a>
+        <a href="mailto:hello@nearpad.io" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Email</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_5201_10498)">
+        <path d="M0.804981 6.2377L12.0008 11.8349L23.1966 6.2377C23.1551 5.52432 22.8425 4.85378 22.3227 4.36341C21.803 3.87305 21.1154 3.59997 20.4008 3.6001H3.60078C2.8862 3.59997 2.19861 3.87305 1.67883 4.36341C1.15905 4.85378 0.846427 5.52432 0.804981 6.2377Z" fill="currentColor"></path>
+        <path d="M23.2008 9.3653L12.0008 14.9653L0.800781 9.3653V17.6001C0.800781 18.3427 1.09578 19.0549 1.62088 19.58C2.14598 20.1051 2.85817 20.4001 3.60078 20.4001H20.4008C21.1434 20.4001 21.8556 20.1051 22.3807 19.58C22.9058 19.0549 23.2008 18.3427 23.2008 17.6001V9.3653Z" fill="currentColor"></path>
+        </g>
+        <defs>
+        <clipPath id="clip0_5201_10498">
+        <rect width="24" height="24" fill="currentColor"></rect>
+        </clipPath>
+        </defs>
+        </svg>
+        </a>
+        <a href="https://discord.com/channels/951468324544471040/951468324544471046" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Discord</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.317 4.15557C18.7873 3.45369 17.147 2.93658 15.4319 2.6404C15.4007 2.63469 15.3695 2.64897 15.3534 2.67754C15.1424 3.05276 14.9087 3.54226 14.7451 3.927C12.9004 3.65083 11.0652 3.65083 9.25832 3.927C9.09465 3.5337 8.85248 3.05276 8.64057 2.67754C8.62448 2.64992 8.59328 2.63564 8.56205 2.6404C6.84791 2.93563 5.20756 3.45275 3.67694 4.15557C3.66368 4.16129 3.65233 4.17082 3.64479 4.18319C0.533392 8.83155 -0.31895 13.3657 0.0991801 17.8436C0.101072 17.8655 0.11337 17.8864 0.130398 17.8997C2.18321 19.4073 4.17171 20.3225 6.12328 20.9291C6.15451 20.9386 6.18761 20.9272 6.20748 20.9015C6.66913 20.2711 7.08064 19.6063 7.43348 18.9073C7.4543 18.8664 7.43442 18.8178 7.39186 18.8016C6.73913 18.554 6.1176 18.2521 5.51973 17.9093C5.47244 17.8816 5.46865 17.814 5.51216 17.7816C5.63797 17.6873 5.76382 17.5893 5.88395 17.4902C5.90569 17.4721 5.93598 17.4683 5.96153 17.4797C9.88928 19.273 14.1415 19.273 18.023 17.4797C18.0485 17.4674 18.0788 17.4712 18.1015 17.4893C18.2216 17.5883 18.3475 17.6873 18.4742 17.7816C18.5177 17.814 18.5149 17.8816 18.4676 17.9093C17.8697 18.2588 17.2482 18.554 16.5945 18.8006C16.552 18.8168 16.533 18.8664 16.5538 18.9073C16.9143 19.6054 17.3258 20.2701 17.7789 20.9005C17.7978 20.9272 17.8319 20.9386 17.8631 20.9291C19.8241 20.3225 21.8126 19.4073 23.8654 17.8997C23.8834 17.8864 23.8948 17.8664 23.8967 17.8445C24.3971 12.6676 23.0585 8.17064 20.3482 4.18414C20.3416 4.17082 20.3303 4.16129 20.317 4.15557ZM8.02002 15.117C6.8375 15.117 5.86313 14.0313 5.86313 12.6981C5.86313 11.3648 6.8186 10.2791 8.02002 10.2791C9.23087 10.2791 10.1958 11.3743 10.1769 12.6981C10.1769 14.0313 9.22141 15.117 8.02002 15.117ZM15.9947 15.117C14.8123 15.117 13.8379 14.0313 13.8379 12.6981C13.8379 11.3648 14.7933 10.2791 15.9947 10.2791C17.2056 10.2791 18.1705 11.3743 18.1516 12.6981C18.1516 14.0313 17.2056 15.117 15.9947 15.117Z" fill="currentColor"></path>
+        </svg>
+        </a>
+        <a href="https://forum.pad.fi/" class="text-gray-200 hover:text-purple-400">
+        <span class="sr-only">Forum</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.0858 2C17.555 2 22 6.57083 22 11.9975C22 17.4225 17.5583 21.9892 12.0833 21.9892L2 22V11.825C2 6.4 6.61 2 12.0858 2ZM12.1825 5.8025C11.1205 5.80134 10.0763 6.07464 9.15105 6.59588C8.2258 7.11713 7.45096 7.86863 6.90167 8.7775C6.3569 9.68207 6.05883 10.7137 6.03719 11.7694C6.01555 12.8251 6.27109 13.868 6.77833 14.7942L5.66667 18.3417L9.66167 17.4467C10.7796 17.9462 12.0205 18.1028 13.2275 17.8966C14.4344 17.6904 15.553 17.1307 16.4417 16.2883C17.3254 15.4521 17.9363 14.3687 18.1945 13.1798C18.4528 11.9908 18.3464 10.7517 17.8892 9.62417C17.4267 8.49266 16.6374 7.52475 15.6221 6.84414C14.6067 6.16354 13.4115 5.80116 12.1892 5.80333H12.1825V5.8025Z" fill="currentColor"></path>
+        </svg>
+        </a>
         </div>
-      </footer>
-    </div>
-    
-    
+  </footer>
+      
+      
+     
+      
+      
   
     
-  </body>
+  <script>
+      let subMenu = document.getElementById("subMenu");
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+
+      }
+  </script>
 </html>
 
