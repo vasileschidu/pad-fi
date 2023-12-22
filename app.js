@@ -61,6 +61,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".text { background: linear-gradient(to right, #81ABEC, #774FC9, #FFCB92); -webkit-background-clip: text; color: transparent; animation: type-animation 1s ease-out; } @keyframes type-animation { from { width: 0; } to { width: 100%; } } .cursor { animation: blink-animation 1s infinite; display: inline-block; vertical-align: middle; } @keyframes blink-animation { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }";
+    css.innerHTML = ".text { background: linear-gradient(to right, #81ABEC, #774FC9, #FFCB92); -webkit-background-clip: text; color: transparent; animation: type-animation 1s ease-out; } @keyframes type-animation { from { width: 0; } to { width: 100%; } } .cursor { animation: blink-animation 1s infinite; display: inline-block; vertical-align: middle; } @keyframes blink-animation { 0%, 100% { opacity: 0; } 50% { opacity: 1; } } body { animation: gradient-animation 5s linear infinite; } @keyframes gradient-animation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }";
     document.body.appendChild(css);
 };
