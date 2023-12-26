@@ -21,7 +21,7 @@ TxtType.prototype.tick = function() {
 
     // Set the cursor styles for rectangle shape with padding
     var cursorWidth = '3px'; // Adjust the width as needed
-    var cursorHeight = '100px'; // Adjust the height as needed
+    var cursorHeight = '80px'; // Adjust the height as needed
     var cursorColor = '#fff'; // Adjust the color as needed
     var cursorPaddingTop = '8px'; // Adjust the top padding as needed
 
