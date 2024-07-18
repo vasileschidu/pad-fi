@@ -1,240 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AZAAR | DEX Aggregator</title>
-    <link href="./dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="app.js"></script>
 
-    
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AZAAR | DEX Aggregator</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="app.js"></script>
 
 
+</head>
 
-      <!-- Header -->
+
+<div class="bg-black">
+
+  <!-- Header -->
   <div class="bg-black m-auto h-screen">
-        <header class="absolute inset-x-0 top-0 z-50">
+    <header class="absolute inset-x-0 top-0 z-50">
 
-          <nav class="flex items-center justify-between p-5 lg:px-24" aria-label="Global">
-            <div class="flex lg:flex-1">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">AZAAR</span>
-                <img class="h-4 md:h-5 w-auto" src="src/img/azaar-logo.svg" alt="">
-              </a>
-            </div>
-            
-            
-            <div class=" lg:flex lg:flex-1 lg:justify-end">
-              <button type="button" aria-label="Go to app" class="border-transparent bg-opacity-20 bg-gray-950 backdrop-blur-md inline-flex group items-center gap-x-2 font-space border-b-2 rounded-xl px-6 py-3.5 md:px-6 md:py-3.5 ring-1  ring-gray-600/40 text-sm font-semibold text-white   transition-all ease-in-out duration-300 hover:ring-purple-400 hover:text-purple-400 hover:border-purple-400 shadow-[inset_0_-2px_10px_rgba(216,180,254,0.0)] hover:shadow-[inset_0_-2px_10px_rgba(216,180,254,0.6)] ">
-                Go to app                            
-              </button>
+      <nav class="flex items-center justify-between p-5 lg:px-24" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">AZAAR</span>
+            <img class="h-4 md:h-5 w-auto" src="src/img/azaar-logo.svg" alt="">
+          </a>
+        </div>
+        <div class=" lg:flex lg:flex-1 lg:justify-end">
+          <button type="button" aria-label="Go to app"
+            class="border-transparent bg-opacity-20 bg-gray-950 backdrop-blur-md inline-flex group items-center gap-x-2 font-space border-b-2 rounded-xl px-6 py-3.5 md:px-6 md:py-3.5 ring-1  ring-gray-600/40 text-sm font-semibold text-white   transition-all ease-in-out duration-300 hover:ring-purple-400 hover:text-purple-400 hover:border-purple-400 shadow-[inset_0_-2px_10px_rgba(216,180,254,0.0)] hover:shadow-[inset_0_-2px_10px_rgba(216,180,254,0.6)] ">
+            Go to app
+          </button>
+        </div>
+      </nav>
+    </header>
 
-            </div>
-          </nav>
-        </header>
+    <div class="relative isolate">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+      <spline-viewer class="absolute pointer-events-none z-10 w-auto min-w-full min-h-full max-w-none"
+        url="https://prod.spline.design/QcKL4k7TfKg5lyus/scene.splinecode"></spline-viewer>
+
+        <!-- <div class="absolute bg-cover bg-center buttom -z-10">
+          <img src="src/img/background.svg">
+        </div> -->
+
+        <img src="src/img/back.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+
+
+
+
       
 
+      <div class="mx-auto max-w-4xl sm:max-w-3xl md:max-w-4xl h-screen flex flex-col justify-center items-center ">
 
-          <div class="relative isolate overflow-hidden ">
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.10/build/spline-viewer.js"></script>
-            <spline-viewer class="absolute z-10 w-auto min-w-full min-h-full max-w-none" url="https://prod.spline.design/QcKL4k7TfKg5lyus/scene.splinecode"></spline-viewer>
-            <!-- <iframe class="absolute z-10 w-auto min-w-full min-h-full max-w-none" src='https://my.spline.design/ordercopy-e36447e09647372a17d19c5a3bed99d2/' frameborder='0' width='100%' height='100%'></iframe> -->
-            <svg class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
-              <defs>
-                <pattern id="983e3e4c-de6d-4c3f-8d64-b9761d1534cc" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-                  <path d="M.5 200V.5H200" fill="none" />
-                </pattern>
-              </defs>
-              <svg x="50%" y="-1" class="overflow-visible fill-gray-800/20">
-                <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
-              </svg>
-              <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
-            </svg>
-            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-              <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#FFCB92] via-[#774FC9] to-[#81ABEC] opacity-40 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class=" z-30 mb-8 sm:flex rounded-full bg-opacity-20 bg-gray-950 backdrop-blur-md sm:justify-center">
+          <div
+            class="relative rounded-full px-4 py-2 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
+            The DEX Agg powering base. <span class="h-4 w-px bg-gray-900/10" aria-hidden="true"></span> <a
+              href="https://t.me/azaarannouncements" target=”_blank” class="font-semibold text-indigo-500"></span>Read
+              more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="text-center pb-20">
+          <h1 class="text-6xl font-bold tracking-tight text-white sm:text-[100px] md:text-[126px]">
+            <div class="inline-block font-space relative ">One</div>
+            <div class="inline-block font-space relative z-20">place</div>
+            <div class="inline-block font-space relative z-20">to</div>
+            <div class="block font-space relative z-20"></div>
+
+            <div class="inline font-space relative typewrite" data-period="2000" data-type='[ "buy", "trade", "sell" ]'>
             </div>
+            <div class="inline-block font-space relative z-20">them</div>
+            <div class="inline-block font-space relative z-20">all</div>
+          </h1>
+        </div>
 
-            <div class="mx-auto max-w-2xl h-screen flex flex-col justify-center items-center ">
-
-              <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-              </div>
-              <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl" aria-hidden="true">
-                <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)"></div>
-              </div>
-              
-                  
-              <div class=" z-30 mb-8 sm:flex rounded-full bg-opacity-20 bg-gray-950 backdrop-blur-md sm:justify-center">
-                <div class="relative rounded-full px-4 py-2 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                  The DEX Agg powering base. <span class="h-4 w-px bg-gray-900/10" aria-hidden="true"></span> <a href="https://t.me/azaarannouncements" target=”_blank” class="font-semibold text-indigo-500"></span>Read more <span aria-hidden="true">&rarr;</span></a>
-                </div>
-              </div> 
-
-              
-              <div class="text-center pb-20">
-                <h1 class="text-6xl font-bold tracking-tight text-white sm:text-8xl">
-                  <div class="inline-block font-space relative ">One</div>
-                  <div class="inline-block font-space relative z-20">place</div>
-                  <div class="inline-block font-space relative z-20">to</div>
-                  <div class="block font-space relative z-20"></div>
-                
-  
-                  <div class="inline font-space relative typewrite"
-                        data-period="2000" data-type='[ "buy", "trade", "sell" ]'>
-                  </div>
-                  <div class="inline-block font-space relative z-20">them</div>
-                  <div class="inline-block font-space relative z-20">all</div>
-                </h1>
-              </div>
-   
-            </div>
-
-            <div class="absolute inset-x-0 z-20 top-[calc(100%-13rem)]  transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-              <div class="relative  left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#81ABEC] via-[#774FC9] to-[#FFCB92] opacity-40 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-            </div>
-
-            <footer class="absolute  right-0 z-10 bottom-0">
-              <div class="mx-auto bg-black  h-20 w-96 rounded-lg overflow-hidden px-4 pt-4 sm:pt-4 lg:px-8">  
-              </div>
-          </footer>
-            
-          </div>    
       </div>
 
-     
       
 
-
-    <footer class="absolute p-5 inset-x-0 bottom-0">
-        <div class=" hidden rounded-md md:flex justify-center overflow-hidden  sm:pt-4 lg:px-8">
-            <nav class="-mb-px flex items-center  bg-opacity-20 bg-gray-950 backdrop-blur-md rounded-lg pr-4 pl-4 pt-4 justify-center space-x-2 ">
-    
-              <div class="group flex flex-col items-center">
-                <a href="https://t.me/azaarannouncements" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Telegram</a>
-                <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
-              </div>
-
-              <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
-
-              <div class="group flex flex-col items-center">
-                <a href="https://discord.com/channels/azaar" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Discord</a>
-                <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
-              </div>
-
-              <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
-
-              <div class="group flex flex-col items-center">
-                    <a href="https://twitter.com/AzaarExchange" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">X</a>
-                    <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
-              </div>
-
-              <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
-
-              <div class="group flex flex-col items-center">
-                <a href="https://azaar.mirror.xyz/" class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Mirror</a>
-                <div class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full"></div>
-              </div>
-              
-            </nav>
+      <footer class="absolute  right-0 z-10 bottom-0">
+        <div class="mx-auto bg-black  h-20 w-96 rounded-lg overflow-hidden px-4 pt-4 sm:pt-4 lg:px-8">
         </div>
-    </footer>
-      
+      </footer>
 
-    <footer class="absolute flex justify-center md:hidden  items-center p-5 inset-x-0 bottom-0">
-      <div class="-mb-px flex inline-flex items-center  bg-opacity-20 bg-gray-950 backdrop-blur-md rounded-lg p-4 justify-center items-center space-x-4 ">
-        <a href="https://t.me/azaarannouncements" class="text-gray-200 hover:text-purple-400">
-          <span class="sr-only">Telegram</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38245C11.3857 9.78701 9.44176 10.6243 6.52656 11.8945C6.05318 12.0827 5.8052 12.2669 5.78262 12.4469C5.74447 12.7513 6.12558 12.8711 6.64454 13.0343C6.71513 13.0565 6.78828 13.0795 6.86326 13.1039C7.37385 13.2698 8.06067 13.464 8.41772 13.4717C8.7416 13.4787 9.10309 13.3452 9.50218 13.0711C12.2259 11.2325 13.632 10.3032 13.7202 10.2832C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4039C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4113 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80082C16.6483 8.66229 16.6318 8.48499 16.6184 8.40716C16.6051 8.32932 16.5773 8.21843 16.4761 8.13634C16.3563 8.03912 16.1713 8.01862 16.0886 8.02008C15.7125 8.0267 15.1354 8.22736 12.3583 9.38245Z" fill="currentColor"></path>
-          </svg>
-        </a>
-
-        <a href="https://twitter.com/AzaarExchange" class="text-gray-200 hover:text-purple-400">
-          <span class="sr-only">X</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M13.9047 10.4696L21.3513 2H19.5873L13.1187 9.35254L7.956 2H2L9.80867 13.1194L2 22H3.764L10.5907 14.2338L16.044 22H22M4.40067 3.30158H7.11067L19.586 20.7624H16.8753" fill="currentColor"/>
-          </svg>
-        </a>
-
-        <a href="https://discord.com/channels/azaar" class="text-gray-200 hover:text-purple-400">
-          <span class="sr-only">Discord</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.317 4.15557C18.7873 3.45369 17.147 2.93658 15.4319 2.6404C15.4007 2.63469 15.3695 2.64897 15.3534 2.67754C15.1424 3.05276 14.9087 3.54226 14.7451 3.927C12.9004 3.65083 11.0652 3.65083 9.25832 3.927C9.09465 3.5337 8.85248 3.05276 8.64057 2.67754C8.62448 2.64992 8.59328 2.63564 8.56205 2.6404C6.84791 2.93563 5.20756 3.45275 3.67694 4.15557C3.66368 4.16129 3.65233 4.17082 3.64479 4.18319C0.533392 8.83155 -0.31895 13.3657 0.0991801 17.8436C0.101072 17.8655 0.11337 17.8864 0.130398 17.8997C2.18321 19.4073 4.17171 20.3225 6.12328 20.9291C6.15451 20.9386 6.18761 20.9272 6.20748 20.9015C6.66913 20.2711 7.08064 19.6063 7.43348 18.9073C7.4543 18.8664 7.43442 18.8178 7.39186 18.8016C6.73913 18.554 6.1176 18.2521 5.51973 17.9093C5.47244 17.8816 5.46865 17.814 5.51216 17.7816C5.63797 17.6873 5.76382 17.5893 5.88395 17.4902C5.90569 17.4721 5.93598 17.4683 5.96153 17.4797C9.88928 19.273 14.1415 19.273 18.023 17.4797C18.0485 17.4674 18.0788 17.4712 18.1015 17.4893C18.2216 17.5883 18.3475 17.6873 18.4742 17.7816C18.5177 17.814 18.5149 17.8816 18.4676 17.9093C17.8697 18.2588 17.2482 18.554 16.5945 18.8006C16.552 18.8168 16.533 18.8664 16.5538 18.9073C16.9143 19.6054 17.3258 20.2701 17.7789 20.9005C17.7978 20.9272 17.8319 20.9386 17.8631 20.9291C19.8241 20.3225 21.8126 19.4073 23.8654 17.8997C23.8834 17.8864 23.8948 17.8664 23.8967 17.8445C24.3971 12.6676 23.0585 8.17064 20.3482 4.18414C20.3416 4.17082 20.3303 4.16129 20.317 4.15557ZM8.02002 15.117C6.8375 15.117 5.86313 14.0313 5.86313 12.6981C5.86313 11.3648 6.8186 10.2791 8.02002 10.2791C9.23087 10.2791 10.1958 11.3743 10.1769 12.6981C10.1769 14.0313 9.22141 15.117 8.02002 15.117ZM15.9947 15.117C14.8123 15.117 13.8379 14.0313 13.8379 12.6981C13.8379 11.3648 14.7933 10.2791 15.9947 10.2791C17.2056 10.2791 18.1705 11.3743 18.1516 12.6981C18.1516 14.0313 17.2056 15.117 15.9947 15.117Z" fill="currentColor"></path>
-          </svg>
-        </a>
-
-        <a href="https://azaar.mirror.xyz/" class="text-gray-200 hover:text-purple-400">
-          <span class="sr-only">Mirror</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 24">
-            <path d="M4 9.12903C4 4.63949 7.56247 1 11.957 1C16.3516 1 19.914 4.63949 19.914 9.12903V20.7647C19.914 21.447 19.3727 22 18.7048 22H5.20916C4.54136 22 4 21.447 4 20.7647V9.12903Z" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9686 20.991V9.15272C18.9686 5.18506 15.8294 1.96864 11.957 1.96864C8.08459 1.96864 4.94538 5.18506 4.94538 9.15272V20.991C4.94538 21.0133 4.96302 21.0314 4.98478 21.0314H18.9292C18.951 21.0314 18.9686 21.0133 18.9686 20.991ZM11.957 1C7.56247 1 4 4.6501 4 9.15272V20.991C4 21.5482 4.4409 22 4.98478 22H18.9292C19.4731 22 19.914 21.5482 19.914 20.991V9.15272C19.914 4.6501 16.3516 1 11.957 1Z" fill="currentColor"/>
-            <defs>
-              <linearGradient id="paint0_linear_15392_101461" x1="6.04833" y1="2.2108" x2="20.4021" y2="24.498" gradientUnits="userSpaceOnUse">
-                <stop offset="0.265625"/>
-                <stop offset="0.734375"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </a>     
-        </div>     
-  </footer>
-      
-      
-  <!-- Popup Modal -->
-<!-- <div id="subscribeModal" class="hidden absolute z-50 left-0 top-0 w-full h-full bg-opacity-20 bg-gray-950 backdrop-blur-md flex justify-center items-center space-x-4">
-  <div class="text-white bg-opacity-20 bg-gray-950 backdrop-blur-md p-5 rounded-lg">
-    <div class="mb-2 p-4 text-sm">
-        <input type="text" id="name" name="name" placeholder="Your Name" class="border-2 border-gray-300 rounded p-1 w-full rounded gap-x-2 font-space border-b-2 rounded-xl px-6 py-3.5 md:px-6 md:py-3.5 ring-1">
     </div>
-    <div class="mb-4 p-4 text-sm">
-        <input type="email" id="email" name="email" placeholder="Your Email" class="border-2 border-gray-300 rounded p-1 w-full rounded gap-x-2 font-space border-b-2 rounded-xl px-6 py-3.5 md:px-6 md:py-3.5 ring-1">
-    </div>
-    <div class="mb-4 p-4 text-sm">
-      <button id="subscribeButton" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold rounded gap-x-2 font-space rounded-xl px-6 py-3.5 md:px-6 md:py-3.5 ring-1 p-4">Subscribe to AZAAR</button>
-    </div>
-    <button id="closeModal" class="absolute top-0 right-0 m-2 text-4xl">&times;</button>
   </div>
-</div> -->
 
 
-<div id="subscribeModal" class=" hidden relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class=" py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Transformative Trading Solutions</p>
+      </div>
+      <p class="mx-auto mt-6 max-w-2xl text-center text-lg pb-32 leading-8 text-gray-300">Our solutions combine superior technology, accessibility, and powerful trading tools to give you the edge you need.</p>
+    
+      <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-40 lg:gap-8  lg:mx-0 lg:max-w-none lg:grid-cols-3">
 
-  <div class="fixed inset-0 bg-gray-950 bg-opacity-75 backdrop-blur-sm transition-opacity"></div>
-
-  <div class="fixed flex min-h-full items-center inset-0 z-10 w-screen justify-center text-center overflow-y-auto ">
-      <div class="relative transform overflow-hidden rounded-3xl  text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl ring-1  ring-gray-600/40">
-          <div class="relative isolate overflow-hidden bg-gray-900 px-6 rounded-3xl py-24 shadow-2xl  sm:px-24 xl:py-32">
-            <div class="absolute right-0 top-0  pr-7 pt-7 sm:block">
-              <button id="closeModal" type="button" class="rounded-md hover:bg-gray-950/40 text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                <span class="sr-only">Close</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+        <div class="rounded-3xl p-8 group font-space transition-all ease-in-out duration-300 bg-gradient-to-br from-white/10 to-white/0 ring-1 ring-white/10 
+        xl:p-10">
+          <!-- Color gradient line  -->
+          <!-- <div class="absolute transition ease-in-out duration-500 group-hover:translate-x-16 -mt-1 h-20 overflow-hidden">
+            <div class="flex -mt-px h-[2px] w-56">
+              <div class="w-full flex-none blur-md [background-image:linear-gradient(90deg,rgba(129,171,236,0)_0%,#774FC9_32.29%,rgba(255,203,146,1)_67.19%,rgba(255,203,146,0)_100%)]"></div>
+              <div class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(129,171,236,0)_0%,#774FC9_32.29%,rgba(255,203,146,1)_67.19%,rgba(255,203,146,0)_100%)]"></div>
             </div>
-            <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified when we’re launching.</h2>
-            <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">Revolutionize Your Crypto Journey: Buy Securely, Swap Seamlessly, Sell Strategically.</p>
-            <form class="mx-auto mt-10 flex max-w-md gap-x-4">
-              <label for="email-address" class="sr-only">Email address</label>
-              <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6" placeholder="Enter your email">
-              <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Notify me</button>
-            </form>
-            <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2" aria-hidden="true">
-              <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
-              <defs>
-                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(512 512) rotate(90) scale(512)">
-                  <stop stop-color="#7775D6" />
-                  <stop offset="1" stop-color="#E935C1" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-            </svg>
+          </div> -->
+
+          <img class=" w-48 object-cover -mt-36 pb-8" src="src/img/1.png" alt="">
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-freelancer" class="text-2xl font-semibold leading-8 text-white">Best in class algo routers</h3>
           </div>
-        
+          <p class="mt-4 text-sm leading-6 text-gray-400">Technically superior engine powering the DEX aggregator, capable of future scalability.</p>
+        </div>
+
+        <div class="rounded-3xl p-8 group font-space transition-all ease-in-out duration-300 bg-gradient-to-br from-white/10 to-white/0 ring-1 ring-white/10 xl:p-10">
+          <img class=" w-48 object-cover -mt-36 pb-8" src="src/img/2.png" alt="">
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-freelancer" class="text-2xl font-semibold leading-8 text-white">AI for accessibility and ease</h3>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-400">Onchain search made simple, modular widgets built for DeFi, and inclusive for global demographic.</p>
+        </div>
+
+        <div class="rounded-3xl p-8 group font-space transition-all ease-in-out duration-300 bg-gradient-to-br from-white/10 to-white/0 ring-1 ring-white/10 xl:p-10">
+          <img class=" w-48 object-cover -mt-36 pb-8" src="src/img/3.png" alt="">
+          <div class="flex items-center justify-between gap-x-4">
+            <h3 id="tier-freelancer" class="text-2xl font-semibold leading-8 text-white">Advanced Trading features</h3>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-400">Revenue generating, automation and superior orderbook-like features, perps, and more.</p>
+        </div>
+
       </div>
     </div>
   </div>
@@ -242,11 +143,164 @@
 
 
 
+<footer class=" bg-black p-5 inset-x-0 bottom-0">
+  <div class=" hidden rounded-md md:flex justify-center overflow-hidden  sm:pt-4 lg:px-8">
+    <nav
+      class="-mb-px flex items-center  bg-opacity-20 bg-gray-950 backdrop-blur-md rounded-lg pr-4 pl-4 pt-4 justify-center space-x-2 ">
+
+      <div class="group flex flex-col items-center">
+        <a href="https://t.me/azaarannouncements"
+          class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Telegram</a>
+        <div
+          class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full">
+        </div>
+      </div>
+
+      <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://discord.com/channels/azaar"
+          class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Discord</a>
+        <div
+          class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full">
+        </div>
+      </div>
+
+      <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://twitter.com/AzaarExchange"
+          class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">X</a>
+        <div
+          class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full">
+        </div>
+      </div>
+
+      <p class="text-gray-200/30 font-space  whitespace-nowrap px-1 pb-4 text-xs">/</p>
+
+      <div class="group flex flex-col items-center">
+        <a href="https://azaar.mirror.xyz/"
+          class="text-gray-200  font-space hover:text-purple-400 whitespace-nowrap px-1 pb-4 text-xs">Mirror</a>
+        <div
+          class="bg-purple-400 h-0.5 w-0 shadow-[0_-5px_10px_1px_rgba(2192,132,252,0.1)] group-hover:shadow-[0_-5px_16px_1px_rgba(2192,132,252,0.8)] transition-all ease-in-out duration-500 group-hover:w-full">
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</footer>
+
+
+<footer class="bg-black flex justify-center md:hidden  items-center p-5 inset-x-0 bottom-0">
+  <div
+    class="-mb-px flex inline-flex items-center  bg-opacity-20 bg-gray-950 backdrop-blur-md rounded-lg p-4 justify-center items-center space-x-4 ">
+    <a href="https://t.me/azaarannouncements" class="text-gray-200 hover:text-purple-400">
+      <span class="sr-only">Telegram</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38245C11.3857 9.78701 9.44176 10.6243 6.52656 11.8945C6.05318 12.0827 5.8052 12.2669 5.78262 12.4469C5.74447 12.7513 6.12558 12.8711 6.64454 13.0343C6.71513 13.0565 6.78828 13.0795 6.86326 13.1039C7.37385 13.2698 8.06067 13.464 8.41772 13.4717C8.7416 13.4787 9.10309 13.3452 9.50218 13.0711C12.2259 11.2325 13.632 10.3032 13.7202 10.2832C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4039C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4113 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.3821 16.6352 8.80082C16.6483 8.66229 16.6318 8.48499 16.6184 8.40716C16.6051 8.32932 16.5773 8.21843 16.4761 8.13634C16.3563 8.03912 16.1713 8.01862 16.0886 8.02008C15.7125 8.0267 15.1354 8.22736 12.3583 9.38245Z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+
+    <a href="https://twitter.com/AzaarExchange" class="text-gray-200 hover:text-purple-400">
+      <span class="sr-only">X</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M13.9047 10.4696L21.3513 2H19.5873L13.1187 9.35254L7.956 2H2L9.80867 13.1194L2 22H3.764L10.5907 14.2338L16.044 22H22M4.40067 3.30158H7.11067L19.586 20.7624H16.8753"
+          fill="currentColor" />
+      </svg>
+    </a>
+
+    <a href="https://discord.com/channels/azaar" class="text-gray-200 hover:text-purple-400">
+      <span class="sr-only">Discord</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.317 4.15557C18.7873 3.45369 17.147 2.93658 15.4319 2.6404C15.4007 2.63469 15.3695 2.64897 15.3534 2.67754C15.1424 3.05276 14.9087 3.54226 14.7451 3.927C12.9004 3.65083 11.0652 3.65083 9.25832 3.927C9.09465 3.5337 8.85248 3.05276 8.64057 2.67754C8.62448 2.64992 8.59328 2.63564 8.56205 2.6404C6.84791 2.93563 5.20756 3.45275 3.67694 4.15557C3.66368 4.16129 3.65233 4.17082 3.64479 4.18319C0.533392 8.83155 -0.31895 13.3657 0.0991801 17.8436C0.101072 17.8655 0.11337 17.8864 0.130398 17.8997C2.18321 19.4073 4.17171 20.3225 6.12328 20.9291C6.15451 20.9386 6.18761 20.9272 6.20748 20.9015C6.66913 20.2711 7.08064 19.6063 7.43348 18.9073C7.4543 18.8664 7.43442 18.8178 7.39186 18.8016C6.73913 18.554 6.1176 18.2521 5.51973 17.9093C5.47244 17.8816 5.46865 17.814 5.51216 17.7816C5.63797 17.6873 5.76382 17.5893 5.88395 17.4902C5.90569 17.4721 5.93598 17.4683 5.96153 17.4797C9.88928 19.273 14.1415 19.273 18.023 17.4797C18.0485 17.4674 18.0788 17.4712 18.1015 17.4893C18.2216 17.5883 18.3475 17.6873 18.4742 17.7816C18.5177 17.814 18.5149 17.8816 18.4676 17.9093C17.8697 18.2588 17.2482 18.554 16.5945 18.8006C16.552 18.8168 16.533 18.8664 16.5538 18.9073C16.9143 19.6054 17.3258 20.2701 17.7789 20.9005C17.7978 20.9272 17.8319 20.9386 17.8631 20.9291C19.8241 20.3225 21.8126 19.4073 23.8654 17.8997C23.8834 17.8864 23.8948 17.8664 23.8967 17.8445C24.3971 12.6676 23.0585 8.17064 20.3482 4.18414C20.3416 4.17082 20.3303 4.16129 20.317 4.15557ZM8.02002 15.117C6.8375 15.117 5.86313 14.0313 5.86313 12.6981C5.86313 11.3648 6.8186 10.2791 8.02002 10.2791C9.23087 10.2791 10.1958 11.3743 10.1769 12.6981C10.1769 14.0313 9.22141 15.117 8.02002 15.117ZM15.9947 15.117C14.8123 15.117 13.8379 14.0313 13.8379 12.6981C13.8379 11.3648 14.7933 10.2791 15.9947 10.2791C17.2056 10.2791 18.1705 11.3743 18.1516 12.6981C18.1516 14.0313 17.2056 15.117 15.9947 15.117Z"
+          fill="currentColor"></path>
+      </svg>
+    </a>
+
+    <a href="https://azaar.mirror.xyz/" class="text-gray-200 hover:text-purple-400">
+      <span class="sr-only">Mirror</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 24">
+        <path
+          d="M4 9.12903C4 4.63949 7.56247 1 11.957 1C16.3516 1 19.914 4.63949 19.914 9.12903V20.7647C19.914 21.447 19.3727 22 18.7048 22H5.20916C4.54136 22 4 21.447 4 20.7647V9.12903Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.9686 20.991V9.15272C18.9686 5.18506 15.8294 1.96864 11.957 1.96864C8.08459 1.96864 4.94538 5.18506 4.94538 9.15272V20.991C4.94538 21.0133 4.96302 21.0314 4.98478 21.0314H18.9292C18.951 21.0314 18.9686 21.0133 18.9686 20.991ZM11.957 1C7.56247 1 4 4.6501 4 9.15272V20.991C4 21.5482 4.4409 22 4.98478 22H18.9292C19.4731 22 19.914 21.5482 19.914 20.991V9.15272C19.914 4.6501 16.3516 1 11.957 1Z"
+          fill="currentColor" />
+        <defs>
+          <linearGradient id="paint0_linear_15392_101461" x1="6.04833" y1="2.2108" x2="20.4021" y2="24.498"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0.265625" />
+            <stop offset="0.734375" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </a>
+  </div>
+</footer>
 
 
 
-    
- 
+
+<div id="subscribeModal" class=" hidden relative z-50" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+  <div class="fixed inset-0 bg-gray-950 bg-opacity-75 backdrop-blur-sm transition-opacity"></div>
+
+  <div class="fixed flex min-h-full items-center inset-0 z-10 w-screen justify-center text-center overflow-y-auto ">
+    <div
+      class="relative transform overflow-hidden rounded-3xl  text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl ring-1  ring-gray-600/40">
+      <div class="relative isolate overflow-hidden bg-gray-900 px-6 rounded-3xl py-24 shadow-2xl  sm:px-24 xl:py-32">
+        <div class="absolute right-0 top-0  pr-7 pt-7 sm:block">
+          <button id="closeModal" type="button"
+            class="rounded-md hover:bg-gray-950/40 text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <span class="sr-only">Close</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <h2 class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified
+          when we’re launching.</h2>
+        <p class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">Revolutionize Your Crypto Journey:
+          Buy Securely, Swap Seamlessly, Sell Strategically.</p>
+        <form class="mx-auto mt-10 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required
+            class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+            placeholder="Enter your email">
+          <button type="submit"
+            class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Notify
+            me</button>
+        </form>
+        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
+          aria-hidden="true">
+          <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
+          <defs>
+            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(512 512) rotate(90) scale(512)">
+              <stop stop-color="#7775D6" />
+              <stop offset="1" stop-color="#E935C1" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
 
 <script>
   // Get the modal
@@ -259,34 +313,34 @@
   var span = document.getElementById('closeModal');
 
   // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+  btn.onclick = function () {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
   }
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
+  span.onclick = function () {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
   }
 
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.classList.add('hidden');
-          modal.classList.remove('flex');
-      }
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
   }
 </script>
 
-  
-    
-  <script>
-      let subMenu = document.getElementById("subMenu");
-      function toggleMenu() {
-        subMenu.classList.toggle("open-menu");
 
-      }
-  </script>
+
+<script>
+  let subMenu = document.getElementById("subMenu");
+  function toggleMenu() {
+    subMenu.classList.toggle("open-menu");
+
+  }
+</script>
+
 </html>
-
