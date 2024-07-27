@@ -586,8 +586,9 @@ video {
   inset: 0px;
 }
 
-.-inset-2 {
-  inset: -0.5rem;
+.-inset-x-4 {
+  left: -1rem;
+  right: -1rem;
 }
 
 .inset-x-0 {
@@ -595,24 +596,9 @@ video {
   right: 0px;
 }
 
-.-inset-x-2 {
-  left: -0.5rem;
-  right: -0.5rem;
-}
-
-.-inset-x-4 {
-  left: -1rem;
-  right: -1rem;
-}
-
-.-inset-x-5 {
-  left: -1.25rem;
-  right: -1.25rem;
-}
-
-.-inset-x-6 {
-  left: -1.5rem;
-  right: -1.5rem;
+.-inset-x-3 {
+  left: -0.75rem;
+  right: -0.75rem;
 }
 
 .bottom-0 {
@@ -714,10 +700,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.-ml-2 {
-  margin-left: -0.5rem;
 }
 
 .block {
@@ -921,12 +903,6 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0px * var(--tw-space-x-reverse));
-  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1145,10 +1121,6 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pl-0 {
-  padding-left: 0px;
 }
 
 .text-left {
@@ -1458,6 +1430,16 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:-inset-x-6 {
+    left: -1.5rem;
+    right: -1.5rem;
+  }
+
+  .sm\:-inset-x-4 {
+    left: -1rem;
+    right: -1rem;
+  }
+
   .sm\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1526,6 +1508,25 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:-inset-4 {
+    inset: -1rem;
+  }
+
+  .md\:-inset-x-4 {
+    left: -1rem;
+    right: -1rem;
+  }
+
+  .md\:-inset-x-5 {
+    left: -1.25rem;
+    right: -1.25rem;
+  }
+
+  .md\:-inset-x-6 {
+    left: -1.5rem;
+    right: -1.5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
